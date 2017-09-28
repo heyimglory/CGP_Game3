@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game3: Spin</title>
+</head>
+<body>
+
+<h1>Game3: Spin</h1>
+
+<p>Designed by Hung-yu Chen</p>
+
+<p>"Spin" is a two player game about trying to make the ball fall off the base from the other player's side with the spinning little things. </p>
+
+<div style="text-align:center">
+<img src="base.png" width="723" height="379"/>
+
+<h2>Gameplay</h2>
+
+</div>
+<p>Each player controls a spinning stuff that can change their direction of spin but never stops.</p>
+<p>The right player control the moving direction with arrow keys and changes the direction of the spin with '/'. The left player control the moving direction with 'a', 'w', 's', 'd' as arrow keys and changes the direction of the spin with 'q'.</p>
+<div style="text-align:center">
+<img src="spin.png" width="360" height="260"/>
+</div>
+<p>The goal of the game is trying to make the ball fall from the other player's side while preventing it from falling from the player's own side.</p>
+
+<h2>Physics</h2>
+<p>The velocity of the ball damped due to friction when rolling around, and the friction on the white circle is smaller than else where on the base.</p>
+<p>The ball collides with the spinning stuff and the walls elastically, but loses some momentum when colliding into the bule pillars.</p>
+<div style="text-align:center">
+<img src="fraction.png" width="357" height="241"/>
+</div>
+
+<h2>Collision Determination</h2>
+<p>The spinning stuff determines its collision with the wall and the other spinning stuff with the circle formed by its further end fron the axis when spinning, but determines collision with the ball with the plane.</p>
+<div style="text-align:center">
+<img src="collision.png" width="446" height="324"/>
+</div>
+<p>The ball gains some velocity of the normal direction of the spinning plane that it collide into.</p>
+
+<h2>Assets</h2>
+<a href="spin.blend">spin.blend</a>
+<p></p>
+
+</body>
+</html>
